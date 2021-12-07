@@ -1,0 +1,9 @@
+---
+- name: copy module
+  hosts: client
+  tasks:
+   - name: demo of copy module
+     copy:
+      src: /root/ansible-playbooks/sc1.sh
+      dest: /root/
+      mode: 0777

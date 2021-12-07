@@ -1,0 +1,6 @@
+---
+- name: msg
+  hosts: client
+  tasks:
+   - debug:
+      msg: "hello"

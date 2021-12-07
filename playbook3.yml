@@ -1,0 +1,10 @@
+---
+- name: copy script to base machine and run it
+  hosts: client
+  tasks:
+   - name: shell and copy demo
+     copy:
+      src: /root/ansible-playbooks/sc2.sh
+      dest: /root/
+      mode: 0777
+   - shell: ./sc2.sh

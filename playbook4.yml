@@ -1,0 +1,11 @@
+---
+- name: variable demo
+  hosts: client
+  vars_files:
+   - /root/ansible-playbooks/var
+  vars:
+   xyz: hello
+  tasks:
+   - debug:
+      msg: "{{ xyz }}"
+      msg: "{{ x }}"
