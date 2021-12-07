@@ -1,6 +1,7 @@
 ---
 - name:
   hosts: client
+  become: true
   tasks:
   - yum:
      name: httpd
